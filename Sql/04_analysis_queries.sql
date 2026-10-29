@@ -1,7 +1,7 @@
 USE lung_cancer_db;
 
 # Aggregation and joins
--- Overall survival rate by cancer stage (GROUP BY, AVG)
+-- Overall survival rate by cancer stage (GROUP BY, ORDER BY, AVG)
 SELECT cancer_stage,
        COUNT(*)                          AS total_patients,
        SUM(survived)                     AS survivors,
